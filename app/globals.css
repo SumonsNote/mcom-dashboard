@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
+}
+::-webkit-scrollbar:hover {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1c2b77;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0171a5;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+input,
+select,
+textarea {
+  background: inherit;
+}
+
+.button-light {
+  background-color: #fefdfded;
+  position: absolute;
+  border: 1px solid grad;
+  border-radius: 100%;
+  padding: 2px 2px;
+  z-index: 10;
+  box-shadow: inset 1px 1px 1px rgba(254, 255, 255, 0.723),
+    inset -1px -1px 1px rgba(156, 164, 162, 0.842), 1px 1px 6px rgb(34, 29, 29);
+}
+.button-main {
+  background-color: rgb(11, 177, 254);
+  border-radius: 25rem;
+  box-shadow: inset 2px 2px 5px rgb(152, 148, 148),
+    inset -2px -2px 5px rgba(186, 185, 185, 0.932);
+  z-index: 10;
+  position: relative;
+}
+.button-main::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10rem;
+  width: 90%;
+  height: 75%;
+  /* background-color: #ffffff; */
+  /* background-color: #111827; */
+  z-index: 1;
+  box-shadow: inset 2px 2px 4px rgba(24, 16, 16, 0.549),
+    inset -2px -2px 5px rgba(88, 105, 123, 0.875), -2px -2px 5px #d5e3f2,
+    2px 2px 5px rgb(197, 217, 239);
+}
+.button-dark {
+  background-color: #fefdfded;
+  position: absolute;
+  border: 1px solid grad;
+  border-radius: 100%;
+  padding: 2px 2px;
+  z-index: 10;
+  box-shadow: inset 1px 1px 1px rgba(254, 255, 255, 0.723),
+    inset -1px -1px 1px rgba(156, 164, 162, 0.842), -1px 1px 7px rgb(34, 29, 29);
+}
