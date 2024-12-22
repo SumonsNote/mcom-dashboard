@@ -10,8 +10,8 @@ import { MdCategory, MdOutlinePhoneIphone } from "react-icons/md";
 import DarkMood from "./ui/DarkMood";
 
 import { logout } from "@/app/actions";
-import Image from "next/image";
 import { ShoppingBasket } from "lucide-react";
+import Image from "next/image";
 
 export default function NavSideBar({ setIsCollapsed, isCollapsed, isSmall }) {
   const { data: session } = useSession();
@@ -81,7 +81,7 @@ export default function NavSideBar({ setIsCollapsed, isCollapsed, isSmall }) {
           width={175}
           height={25}
           alt="logo"
-          src="https://res.cloudinary.com/dwe6gs8sp/image/upload/v1734710404/ecom_xravvy.png"
+          src="https://res.cloudinary.com/de1tfy2eg/image/upload/v1734904126/v6w0lokhhk45rnfetgze.png"
         />
       </div>
 
